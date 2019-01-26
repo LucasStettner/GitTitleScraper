@@ -15,7 +15,7 @@ Gets all of the closed pull requests and outputs the time, user and name of the 
 
     c. Rename `config.example.json` with `config.json`
 
-2. Replace `GITHUB_USERNAME` and `GITHUB_PASSWORD` in the config.json
+2. Run `npm run start` 
 
-3. Replace `REPO_OWNER` and `REPO_NAME` in the config.json for the repo you want the titles for
+3. Enjoy your list of pull names 🎉🎉
 
