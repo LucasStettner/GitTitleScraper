@@ -16,12 +16,12 @@ octokit.authenticate({ // Auth in order to get more calls
     token: token
 })
 
-octokit.paginate('GET /repos/:owner/:repo/pulls?state=closed', { owner: 'LucasStettner', repo: 'LucasTip' })
+octokit.paginate('GET /repos/:owner/:repo/pulls?state=closed', { owner: repo.owner, repo: repo.name })
     .then(pulls => { // returns an array
 
         pulls.forEach(pull => {
 
-            if (pull.head.ref == 'master' && pull.base.ref == 'prod' && pull.merged_at != null) { // checks if coming from master and going to prod and not closed
+            if (pull.head.ref == repo.master_branch && pull.base.ref == repo.production_branch && pull.merged_at != null) { // checks if coming from master and going to prod and not closed
                 let date = moment(pull.merged_at).format("MM/DD/YYYY");
 
                 pullTitles.push({ title: pull.title, user: pull.user.login, date: pull.merged_at.slice(0, -10) })

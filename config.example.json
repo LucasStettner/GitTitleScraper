@@ -2,6 +2,8 @@
 	"token": "YOUR TOKEN HERE",
 	"repo": {
 		"owner": "REPO_OWNER",
-		"name": "REPO_NAME"
+		"name": "REPO_NAME",
+		"master-branch": "master",
+		"production-branch": "prod"
 	}
 }
