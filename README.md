@@ -9,9 +9,18 @@ Gets all of the closed pull requests and outputs the time, user and name of the 
 
 2. Configure the config.example.json by adding your details
 
-    a. Get your token by vising [Github Tokens](https://github.com/settings/tokens)
+    a. Get your token by visiting [Github Tokens](https://github.com/settings/tokens). *Be sure to activate **repo** and **user***
 
-    b. Replace the **owner** and **name** with the details for your given repository
+    b. Replace the **owner** and **name** with the details for your given repository 
+    ```json
+    ...
+    
+    	"repo": {
+		"owner": "LucasStettner",
+		"name": "GitTitleScraper"
+	}
+
+    ```
 
     c. Rename `config.example.json` with `config.json`
 
