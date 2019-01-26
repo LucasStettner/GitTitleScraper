@@ -1,0 +1,7 @@
+{
+	"token": "YOUR TOKEN HERE",
+	"repo": {
+		"owner": "REPO_OWNER",
+		"name": "REPO_NAME"
+	}
+}

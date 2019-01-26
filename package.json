@@ -1,0 +1,19 @@
+{
+  "name": "nah-git-titles",
+  "version": "1.0.0",
+  "description": "A Simple Node js code to pull repo names for ricky :)",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main"
+  },
+  "author": "Lucas Stettner",
+  "license": "ISC",
+  "dependencies": {
+    "@octokit/rest": "^16.8.0",
+    "chrono": "^1.0.5",
+    "fs": "0.0.1-security",
+    "json2csv": "^4.3.3",
+    "moment": "^2.24.0"
+  }
+}
