@@ -11,13 +11,17 @@ Gets all of the closed pull requests and outputs the time, user and name of the 
 
     a. Get your token by visiting [Github Tokens](https://github.com/settings/tokens/new). *Be sure to activate **repo** and **user***
 
-    b. Replace the **owner** and **name** with the details for your given repository 
+    b. Replace the `owner` and `name` with the details for your given repository. You will also find `master_branch` and `production_branch`. The *master* branch being the base branch that will be send sender to the *prod* branch
+
     ```json
+    
     ...
 
-    	"repo": {
-		"owner": "LucasStettner",
-		"name": "GitTitleScraper"
+	"repo": {
+		"owner": "REPO_OWNER",
+		"name": "REPO_NAME",
+		"master-branch": "master",
+		"production-branch": "prod"
 	}
 
     ```
